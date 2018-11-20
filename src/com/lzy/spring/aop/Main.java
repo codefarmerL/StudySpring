@@ -9,7 +9,8 @@ public class Main {
 		// TODO Auto-generated method stub
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-aop.xml");
 		Calculator cal = ctx.getBean("calculatorImpl",Calculator.class);
-		cal.add(1, 2);
+		int result = cal.add(1, 2);
+		System.out.println("The result is " + result);
 	}
 
 }
